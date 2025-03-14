@@ -59,7 +59,7 @@ Then, run:
 Optionally, use a redirection operator `>` to redirect output:
 ```./my-zip <files> > output.z```
 
-### my-zip.c
+### my-unzip.c
 To translate the program, use
 ```gcc my-unzip.c -o my-unzip -Wall -Werror```
 Then, run:
