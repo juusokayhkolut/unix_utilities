@@ -30,7 +30,7 @@ int main(int argc, char *argv[]) {
         char ch;
 
         // READ 4 BYTES (COUNT) AND 1 BYTE (CHARACTER) AT A TIME
-        while (fread(&count, sizeof(unsigned int), 1, file) == 1 && fread(&ch, sizeof(char), 1, file) == 1) {
+        while (fread(&count, sizeof(unsigned int), 1, file) == 1 && fread(&ch, sizeof(unsigned char), 1, file) == 1) {
             // PRINT CHARACTER 'count' TIMES
             for (unsigned int j = 0; j < count; j++) {
                 putchar(ch);
