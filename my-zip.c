@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
         // OPEN FILE
         FILE *file = fopen(argv[i+1], "r");
         if (!file) {
-            fprintf(stderr, "my-zup: cannot open file\n");
+            fprintf(stderr, "my-zip: cannot open file\n");
             exit(1);
         }
 
