@@ -32,12 +32,12 @@ int main(int argc, char *argv[]) {
         // LOOP OVER EACH CHARACTER
         while ((currentChar = fgetc(file)) != EOF) {
             // IF CHARACTER IS THE SAME AS PREVIOUS, ADD TO COUNT
-            if (currentChar == prevChar) {
+            if ((unsigned char)currentChar == prevChar) {
                 count++;
             } /* ELSE, WRITE TO TERMINAL AND START COUNTRING NEW CHARACTER */ else {
                 if (count > 0) {
-                    fwrite(&count, sizeof(unsigned ), 1, stdout);
-                    fwrite(&prevChar, sizeof(char), 1, stdout);
+                    fwrite(&count, sizeof(unsigned int), 1, stdout);
+                    fwrite(&prevChar, sizeof(unsigned char), 1, stdout);
                 }
                 count = 1;
                 prevChar = currentChar;
@@ -47,7 +47,7 @@ int main(int argc, char *argv[]) {
         // WRITE LAST CHARACTER
         if (count > 0) {
             fwrite(&count, sizeof(unsigned int), 1, stdout);
-            fwrite(&prevChar, sizeof(char), 1, stdout);
+            fwrite(&prevChar, sizeof(unsigned char), 1, stdout);
         }
     }
     
