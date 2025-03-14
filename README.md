@@ -3,8 +3,8 @@
 ## Files
 - `my-cat.c`: Includes logic for reading files and prints it content
 - `my-grep.c`: Includes logic for finding a word in files and prints matching lines
-- `my-zip`: Includes logic for zipping stdin or files contents using 4-byte integer in binary
-- `my-unzip`: Includes logic for unzipping 4-byte integer binary that was zipping using `my-zip`
+- `my-zip.c`: Includes logic for zipping stdin or files contents using 4-byte integer in binary
+- `my-unzip.c`: Includes logic for unzipping 4-byte integer binary that was zipping using `my-zip`
 
 ### my-cat.c
 - `main`
