@@ -12,8 +12,10 @@
 int main(int argc, char *argv[]) {
     // ONLY RUNS IF AT LEAST ONE INPUT FILE WAS GIVEN
     if (argc >= 2) {
+
         // LOOP EACH GIVEN FILE
         for (size_t i = 1; i < argc; i++) {
+        
             // OPEN FILE
             FILE *file = fopen(argv[i], "r");
             if (!file) {
